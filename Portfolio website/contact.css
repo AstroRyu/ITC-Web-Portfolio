@@ -1,0 +1,80 @@
+body.contact-page {
+  background-color: #1a1a2e; /* Matches the main page theme */
+  color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-container {
+  background: rgba(22, 36, 71, 0.9); /* Semi-transparent dark blue */
+  border-radius: 15px;
+  padding: 30px 20px; /* Increased padding for better spacing */
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  box-sizing: border-box; /* Ensures padding is included in the box dimensions */
+  overflow: hidden; /* Prevents content from spilling outside the container */
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4caf50; /* Green accent */
+}
+
+.contact-info {
+  font-size: 1.2rem;
+  line-height: 1.8; /* Better line height for readability */
+  text-align: justify; /* Makes the text justified */
+  word-wrap: break-word; /* Ensures long text (like email) wraps properly */
+  margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.contact-info a {
+  color: #4caf50;
+  text-decoration: none;
+  word-break: break-word; /* Prevents long URLs from breaking the layout */
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Align icons in a row */
+  align-items: center;
+  gap: 20px; /* Space between icons */
+  margin-top: 20px;
+}
+
+.social-icons img {
+  width: 40px; /* Set the fixed width */
+  height: 40px; /* Set the fixed height */
+  object-fit: contain; /* Ensure the image fits within the defined dimensions */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Add hover effects */
+}
+
+.social-icons img:hover {
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
+  filter: brightness(1.2); /* Make the image slightly brighter */
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px;
+  }
+
+  .social-icons {
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 15px;
+  }
+
+  .social-icons img {
+    width: 35px;
+    height: 35px; /* Slightly smaller on mobile */
+  }
+}

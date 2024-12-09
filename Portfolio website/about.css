@@ -1,0 +1,20 @@
+.about-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  
+  .about-box {
+    background: rgba(0, 0, 0, 0.7);
+    color: #eaeaea;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 300px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.8);
+  }
+
+  .about-box p {
+    text-align: left;
+}
+  

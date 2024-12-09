@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Projects</title>
+  <link rel="stylesheet" href="mainpage.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <header>
+    <h1>Patrick James Escape</h1>
+    <nav>
+      <ul>
+        <li><a href="Main Page.html">Home</a></li>
+        <li><a href="about page.html">About</a></li>
+        <li><a href="project page.html" class="active">Projects</a></li>
+        <li><a href="contact page.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project-cards">
+      <div class="project-card" onclick="openModal(this)">
+        <video src="videos/Payrol.mp4" muted autoplay loop data-src="videos/Payrol.mp4"></video>
+        <div class="card-content">
+          <h3>Payrol</h3>
+          <p>This system is an imitation of a payroll system, replicating functions like wage calculation, deductions, and pay stub generation. It is part of our Practical Exposure to Applied Technologies (PETA) program, allowing us to apply theoretical knowledge in real-world scenarios and gain hands-on experience in software development.</p>
+        </div>
+      </div>
+      <div class="project-card" onclick="openModal(this)">
+        <video src="videos/FinalPeta.mp4" muted autoplay loop data-src="videos/FinalPeta.mp4"></video>
+        <div class="card-content">
+          <h3>Pre-finals</h3>
+          <p>For our Pre-finals PETA, we were tasked with creating three programs using control structures. The first program checks if a number is positive or negative. The second program maps a number to a month (e.g., inputting "4" gives "April"). The third program takes five user-input values, adds them, and calculates their average. These programs helped reinforce my understanding of control structures and user input handling.</p>
+        </div>
+      </div>
+      <div class="project-card" onclick="openModal(this)">
+        <video src="videos/Russian Roullete.2.mp4" muted autoplay loop data-src="videos/Russian Roullete.2.mp4"></video>
+        <div class="card-content">
+          <h3>Russian Roullete</h3>
+          <p>This is a Project I have done in my spare time. I was learning about the "Random" in java and then I thought to myself why not make a Russian Roullete.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <video id="modal-video" controls></video>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="scriptmain.js"></script>
+</body>
+</html>
